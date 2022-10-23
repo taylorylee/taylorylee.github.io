@@ -24,3 +24,5 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 ## License
+
+Designed and created by Taylor Lee
