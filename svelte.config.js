@@ -8,3 +8,16 @@ const config = {
 };
 
 export default config;
+
+/*preprocess: sveltePreprocess({
+    scss: {
+      prependData: `@import '$global';`,
+      importer(url, prev, done) {
+        if (url === '$global') {
+          return done({ file: './src/styles/global.scss' });
+        }
+        return done({ file: prev });
+      },
+    },
+  });*/
+

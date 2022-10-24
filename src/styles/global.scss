@@ -4,14 +4,11 @@
 /* Colors */
 
 $black: hsla(246, 15%, 27%, 1);
-$cream: hsla(48, 33%, 97%, 1);
+$cream: hsla(48, 33%, 97%, 1); 
 $tan: hsla(45, 27%, 88%, 1);
 $white: hsla(0, 0%, 100%, 1);
 $light-blue: hsla(206, 22%, 78%, 1);
 $light-green: hsla(70, 27%, 70%, 1);
-
-
-/* Spacing */
 
 /* Characters */
 
@@ -80,6 +77,19 @@ ul, ol, dl {
   list-style-image: none;
 }
 
+img {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+
+
 /* Sidenote. Inspired by Edward Tufte */
 
 .sitenote,
@@ -123,6 +133,7 @@ ul, ol, dl {
 
 .mark {
   background-color: $light-blue; 
+  border-radius: 2px;
 }
 
 
@@ -154,8 +165,12 @@ $z-index-nav: 3;
   }
 }
 
-
 /* Elements */
+
+:global(body) {
+  background-color: $cream;
+  color: $black;
+}
 
 :global(h1, h2, h3, h4, h5, p) {
   color: $black;
@@ -167,19 +182,21 @@ $z-index-nav: 3;
   }
 
 
+/* Layout */
+
 /* Themes */
 
-.dark-mode {
+:global(body.dark-mode) {
   background-color: $black;
   color: $white;
 }
 
-.nature {
+:global(body.nature) {
   background-color: $light-green;
   color: $white;
 }
 
-.ocean {
+:global(body.ocean) {
   background-color: $light-blue;
   color: $white;
 }
