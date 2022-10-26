@@ -1,14 +1,18 @@
 <script>
-    import '$styles/global.scss';
-    import Header from '$routes/Header.svelte';
-    import Footer from '$routes/Footer.svelte';
+    //import '$styles/global.scss';
+    import Footer from './Footer.svelte';
+    import Header from './Header.svelte';
 </script>
 
-<Header />
-
 <div class="container">
+    <Header />
+
     <!-- Pages will be inside here -->
-    <slot></slot>
+    <slot />
+
+    <Footer />
 </div>
 
-<Footer />
+<style lang="scss" global>
+    @import "styles/global.scss";
+</style>
