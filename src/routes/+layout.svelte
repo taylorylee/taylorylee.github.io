@@ -4,14 +4,14 @@
     import Header from './Header.svelte';
 </script>
 
-<div class="container">
+<main class="container">
     <Header />
 
     <!-- Pages will be inside here -->
     <slot />
 
     <Footer />
-</div>
+</main>
 
 <style lang="scss" global>
     @import "styles/global.scss";
