@@ -17,14 +17,12 @@
 <slot name="header"></slot>
 
 <header>
-    <div class="header">
       <a href="/Experiments">Experiments</a>
       <a href="/Writing">Writing</a>
       <Button {no_volume} on:click={() => {toggleVolume()}}>
         <img src={volume_1} alt="volume on" />
       <button href="/static/volume_1.svg" alt="Volume">Music</button> 
       <button href="/static/zap.svg" alt="Theme Changer">Theme</button>  
-    </div>
 </header>
 
 <style lang="scss" global>
@@ -32,7 +30,7 @@
 
     header {
         display: flex;
-        box-shadow: $header-shadow; 
+        box-shadow: #{$header-shadow}; 
         position: relative;
         justify-content: space-between;
         align-items: center; 
