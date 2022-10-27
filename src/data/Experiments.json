@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "title": "Experiment 1",
+        "blurb": "Lorem ipsum dolor sit amet",
+        "bg": "",
+        "category": "",
+        "link": "",
+        "external": true,
+        "src": "",
+        "icon": ""
+    },
+    {
+        "id": "2",
+        "title": "Experiment 2",
+        "blurb": "Lorem ipsum dolor sit amet",
+        "bg": "",
+        "category": "",
+        "link": "",
+        "external": true,
+        "src": "",
+        "icon": ""
+    },
+    {
+        "id": "3",
+        "title": "Experiment 3",
+        "blurb": "Lorem ipsum dolor sit amet",
+        "bg": "",
+        "category": "",
+        "link": "",
+        "external": true,
+        "src": "",
+        "icon": ""
+    }
+]
