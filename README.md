@@ -1,6 +1,8 @@
 # taylorylee.github.io
 
-Internet home. Designed and created by Taylor Lee
+![]()
+
+Carved a little home on the internet
 
 ## Developing
 
