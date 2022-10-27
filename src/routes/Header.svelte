@@ -1,5 +1,6 @@
 <script>
-    import Box from "../components/Box.svelte";
+    import navlinks from 'src/data/NavLinks.svelte';
+    
     import volume_1 from "assets/volume_1.svg";
     import no_volume from "assets/no_volume.svg";
     import zap from "assets/zap.svg";
