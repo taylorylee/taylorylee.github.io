@@ -10,13 +10,14 @@
 </footer>
 
 <style lang="scss">
+    @import "styles/global.scss";
 
     footer {
-        margin-top: $y-padding;
+        margin-top: #{$y-padding};
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: $footer-min-height;
+        min-height: #{$footer-min-height};
     }
-    
+
 </style>

@@ -26,7 +26,7 @@ export default {
       },
 
       // Emit CSS as "files" for other plugins to process. default is true
-      emitCss: false,
+      emitCss: true,
 
       // Warnings are normally passed straight to Rollup. You can
       // optionally handle them here, for example to squelch

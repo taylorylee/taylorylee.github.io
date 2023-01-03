@@ -24,15 +24,16 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
   font-family: 'Spectral', serif;
   font-weight: 400;
   line-height: 1.3;
+  margin: 3rem 0 1.38rem;
+  pointer-events: none;  
 }
 
 h1 {
-  margin-top: 0;
   font-size: 2.488rem;
+  margin-top: 0;
 }
 
 h2 {
@@ -56,7 +57,7 @@ p {
   font-size: 1rem;
 }
 
-.footer {
+footer {
   font-size: 0.833 rem;
 }
 
@@ -152,6 +153,11 @@ $z-index-content: 0;
 $z-index-close-nav: 1;
 $z-index-header: 2;
 $z-index-nav: 3;
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 @mixin viewport-medium {
   @media screen and (min-width: 550px) {
