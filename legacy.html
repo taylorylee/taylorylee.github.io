@@ -1,24 +1,224 @@
-<!-- A simple legacy -->
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>taylor lee</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="tufte.css"/>
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taylor Lee">
+    <title>Taylor Lee</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #111;
+            background: #fffff8;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5% 12%;
+            counter-reset: sidenote-counter;
+        }
+        
+        article {
+            position: relative;
+        }
+        
+        h1 {
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+        
+        p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-bottom: 3rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .newthought {
+            font-variant: small-caps;
+            font-size: 1.2em;
+            letter-spacing: 0.05em;
+        }
+        
+        section {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .ma {
+            height: 3rem;
+        }
+        
+        /* Sidenotes */
+        .sidenote {
+            float: right;
+            clear: right;
+            margin-right: -60%;
+            width: 50%;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            vertical-align: baseline;
+            position: relative;
+        }
+        
+        .sidenote-number {
+            counter-increment: sidenote-counter;
+        }
+        
+        .sidenote-number:after, .sidenote:before {
+            position: relative;
+            vertical-align: baseline;
+        }
+        
+        .sidenote-number:after {
+            content: counter(sidenote-counter);
+            font-size: 0.8rem;
+            top: -0.5rem;
+            left: 0.1rem;
+        }
+        
+        .sidenote:before {
+            content: counter(sidenote-counter) " ";
+            font-size: 0.8rem;
+            top: -0.5rem;
+        }
+        
+        input.margin-toggle {
+            display: none;
+        }
+        
+        label.margin-toggle:not(.sidenote-number) {
+            display: none;
+        }
+        
+        /* Links */
+        a {
+            color: #111;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid #111;
+        }
+        
+        /* Contact */
+        .contact {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+        
+        .contact-note {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 760px) {
+            body {
+                padding: 5% 8%;
+            }
+            
+            .sidenote {
+                display: none;
+            }
+            
+            .margin-toggle:checked + .sidenote {
+                display: block;
+                float: left;
+                left: 1rem;
+                clear: both;
+                width: 95%;
+                margin: 1rem 2.5%;
+                vertical-align: baseline;
+                position: relative;
+            }
+            
+            label.margin-toggle:not(.sidenote-number) {
+                display: inline;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
 </head>
+<body>
+    <article>
+        <h1>Taylor Lee</h1>
 
-<!-- Contact -->
+        <div class="ma"></div>
+        
+        <section>
+            <p><span class="newthought">I come from a third cultural background</span> between California and Aotearoa, New Zealand—two coasts, immersed in extended global cultural field studies and lived experiences, that have taught me the value of embracing multiple worldviews with empathy. This is one grounding that informs a part of my work in human-environment interaction, technology, and systems, examining our influences on our relationship with environmental spaces.<label for="sn-work" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-work" class="margin-toggle"/>
+        </section>
 
-<section id="contact_section"></section>
+        <div class="ma"></div>
+        <div class="ma"></div>
 
-<a href="mailto:taylorylee@pm.me"</a>
-    <span class="sidenote">
-            <em>Emails open! Say hello.</em>
-        </a>
-    </span>
+        <section>
+            <h2>Beyond</h2>
+            
+            <p><span class="newthought">I believe</span> that understanding our environment comes in many combined shapes, whether social, technological, or natural. Understanding this requires transdisciplinary dialogue, curiosity, a low ego, and high integrity. Our purpose should serve human flourishing, not diminish our profound connections to humanity. Intellectual rigor benefits from nuance, evidence, and good faith. This is what I strive to practice throughout, and I believe I have room for growth.</p>
+            
+            <p>Leadership, whether intellectual or institutional, means listening as much as speaking. Seeing beyond facades, cutting through noise, and finding common threads. It means balancing competing goods, acknowledging complexity, and maintaining both principle and pragmatism.</p>
 
+            <p> I enjoy thoughtful craft. Through this simple lens, I pioneered some early foundations and tools alongside peers, mentors, and those I am fortunate to call true friends. </p>
+
+            <p>I'm drawn to people who move comfortably between serious and playful, who genuinely have positive intentions and care for others. Shared adventures, thoughtful exchanges, and serendipitous encounters have been some of my favorite ways to connect.</p>
+            
+            <p>I value quality conversations and good banter with thoughtful people across disciplines. </p>
+        </section>
+
+        <div class="ma"></div>
+        <div class="ma"></div>
+
+        <!-- Add class for public projects and writing  -->
+        
+        <div class="contact">
+            <h2>Contact</h2>
+            <p class="contact-note">Email</p>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="mailto:taylorylee@pm.me">taylorylee@pm.me</a></li>
+            </ul>
+        </div>
+
+        <div class="ma"></div>
+        <div class="ma"></div>
+
+        <p style="font-size: 0.85rem; color: #999; text-align: center; border-top: 1px solid #f0f0f0; padding-top: 2rem;">
+            © 2025 · ~8KB
+        </p>
+    </article>
 </body>
 </html>
